@@ -1,4 +1,4 @@
-<!-- Word count (python scripts/wordcount.py writeup.md; excludes references and this comment): 2945. Do not paste this line into Kaggle. -->
+<!-- Word count (python scripts/wordcount.py writeup.md; excludes references and this comment): 2969. Do not paste this line into Kaggle. -->
 
 # When should a small repair agent stop testing?
 
