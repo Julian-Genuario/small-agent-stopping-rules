@@ -70,7 +70,7 @@ I mutated only functions of at most 60 lines, on lines some test executes. Funct
 
 For each bug I drew one failing test at random (seeded by the bug id) as the **visible failing test**, playing the role of an issue's reproduction. The other failing tests are **hidden**, like a benchmark's held-out validation tests. Every test that passes on the buggy code is **visible**.
 
-A patch is **correct** if the complete suite passes, hidden tests included, and **exact** if its AST equals the original's. **Wrong** means it passed the stopping rule but fails some test. "Correct" only means the project's tests cannot tell the difference. Section 3.4 checks by hand how often that is the same as right.
+A patch is **correct** if the complete suite passes, hidden tests included, and **exact** if its AST equals the original's. **Wrong** means it passed the stopping rule but fails some test. "Correct" only means the project's tests cannot tell the difference. Section 3.4 checks, diff by diff, how often that is the same as right.
 
 ### 2.3 Four stopping rules
 
@@ -164,7 +164,7 @@ A bug took a median of 81 s; the run took 4.3 hours.
 
 ### 3.4 "Passes every test" is not "correct"
 
-I read every accepted patch that passes the complete suite without being AST-identical to the original. That is 75 distinct patches.
+Every accepted patch that passes the complete suite without being AST-identical to the original was reviewed diff by diff (see AI assistance). That is 75 distinct patches.
 
 | source | patches | equivalent | changes behaviour |
 |---|---|---|---|
