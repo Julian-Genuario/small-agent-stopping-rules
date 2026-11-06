@@ -225,7 +225,7 @@ Counting these hidden regressions, the wrong rate under `full` becomes 8.5% for 
 
 ## Reproducibility
 
-Code, bugs, coverage maps and every candidate and model attempt with per-test outcomes are at <REPO_URL> (MIT; upstream excerpts keep their MIT and BSD-3-Clause licences). `scripts/setup.sh` clones both projects at the pinned commits, and `python -m heldout.analyze` rebuilds every table here from the raw results. Re-running everything takes about 10 machine-hours on the hardware above.
+Code, bugs, coverage maps and every candidate and model attempt with per-test outcomes are at https://github.com/Julian-Genuario/small-agent-stopping-rules (MIT; upstream excerpts keep their MIT and BSD-3-Clause licences). `scripts/setup.sh` clones both projects at the pinned commits, and `python -m heldout.analyze` rebuilds every table here from the raw results. Re-running everything takes about 10 machine-hours on the hardware above.
 
 ## AI assistance
 
