@@ -1,0 +1,9 @@
+.venv/
+work/
+work2/
+logs/
+__pycache__/
+*.pyc
+# notes for the submitter, not part of the public repo
+PASOS_ENVIO.md
+REGLAS_VERIFICADAS.md

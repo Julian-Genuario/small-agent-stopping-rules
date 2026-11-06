@@ -1,0 +1,20 @@
+{
+ "repo": "rich",
+ "baseline_failures": [
+  "test_card.py::test_card_render",
+  "test_console.py::test_size_can_fall_back_to_std_descriptors[False-ValueError-ValueError-ValueError-stderr_size4-expected_size4]",
+  "test_console.py::test_size_can_fall_back_to_std_descriptors[False-ValueError-ValueError-stdout_size3-ValueError-expected_size3]",
+  "test_console.py::test_size_can_fall_back_to_std_descriptors[False-ValueError-stdin_size2-ValueError-ValueError-expected_size2]",
+  "test_syntax.py::test_option_no_wrap",
+  "test_syntax.py::test_python_render",
+  "test_syntax.py::test_python_render_indent_guides",
+  "test_syntax.py::test_python_render_simple",
+  "test_syntax.py::test_python_render_simple_passing_lexer_instance",
+  "test_syntax.py::test_syntax_highlight_ranges"
+ ],
+ "n_tests": 1003,
+ "suite_wall_s": [
+  6.792770900065079,
+  8.434656099881977
+ ]
+}

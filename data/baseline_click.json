@@ -1,0 +1,9 @@
+{
+ "repo": "click",
+ "baseline_failures": [],
+ "n_tests": 2016,
+ "suite_wall_s": [
+  9.739548500161618,
+  9.679174599936232
+ ]
+}

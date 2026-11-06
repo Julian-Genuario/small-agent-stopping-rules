@@ -1,0 +1,302 @@
+{
+ "llm_e2b-t08:click-004#2": {
+  "verdict": "equivalent",
+  "note": "operands swapped and an explicit branch added that the else already covered"
+ },
+ "llm_e2b-t08:click-025#2": {
+  "verdict": "not_equivalent",
+  "note": "drops the resilient_parsing guard: help is printed during completion"
+ },
+ "llm_e2b-t08:click-059#0": {
+  "verdict": "equivalent",
+  "note": "bug fixed; the same check is then repeated once more"
+ },
+ "llm_e2b:click-010#0": {
+  "verdict": "not_equivalent",
+  "note": "an empty-string encoding is now kept instead of falling back to the default; annotation rewritten to typing.IO"
+ },
+ "llm_e2b:click-011#0": {
+  "verdict": "not_equivalent",
+  "note": "no newline is written when the prompt is empty or None"
+ },
+ "llm_e2b:click-018#0": {
+  "verdict": "not_equivalent",
+  "note": "both branches return name.upper(): metavar is now ignored entirely"
+ },
+ "llm_e2b:click-020#0": {
+  "verdict": "equivalent",
+  "note": "boolean chain rewritten as early return; same result for all inputs"
+ },
+ "llm_e2b:click-022#0": {
+  "verdict": "not_equivalent",
+  "note": "rv=None now raises AttributeError instead of returning []"
+ },
+ "llm_e2b:click-030#0": {
+  "verdict": "equivalent",
+  "note": "both branches register the class; same effect"
+ },
+ "llm_e2b:click-033#0": {
+  "verdict": "not_equivalent",
+  "note": "adds try/except that swallows FileNotFoundError"
+ },
+ "llm_e2b:click-038#0": {
+  "verdict": "equivalent",
+  "note": "reads self.show_pos into a local; same behaviour"
+ },
+ "llm_e2b:rich-007#0": {
+  "verdict": "equivalent",
+  "note": "chained comparison written the other way round"
+ },
+ "llm_e2b:rich-013#0": {
+  "verdict": "not_equivalent",
+  "note": "total == 0 now returns None instead of raising ZeroDivisionError"
+ },
+ "llm_e2b:rich-022#0": {
+  "verdict": "equivalent",
+  "note": "int(speed) moved into a local"
+ },
+ "llm_e2b:rich-034#0": {
+  "verdict": "not_equivalent",
+  "note": "height=None is now accepted, and a negative extra_lines no longer truncates the lines"
+ },
+ "llm_e2b:rich-035#0": {
+  "verdict": "not_equivalent",
+  "note": "speed == 0 no longer returns None"
+ },
+ "llm_e2b:rich-042#1": {
+  "verdict": "not_equivalent",
+  "note": "key span now ends at the colon, not at the end of the string, and the loop no longer stops after the colon"
+ },
+ "search-oracle-line:click-000#0": {
+  "verdict": "equivalent",
+  "note": "negated inverse comparison; same truth table"
+ },
+ "search-oracle-line:click-001#1": {
+  "verdict": "not_equivalent",
+  "note": "len(prefix) != 2 also accepts prefixes of length 0 or 3+"
+ },
+ "search-oracle-line:click-002#0": {
+  "verdict": "equivalent",
+  "note": "negated inverse comparison; same truth table"
+ },
+ "search-oracle-line:click-005#0": {
+  "verdict": "equivalent",
+  "note": "negated inverse comparison; same truth table"
+ },
+ "search-oracle-line:click-008#0": {
+  "verdict": "equivalent",
+  "note": "negated inverse comparison; same truth table"
+ },
+ "search-oracle-line:click-012#0": {
+  "verdict": "equivalent",
+  "note": "negated inverse comparison; same truth table"
+ },
+ "search-oracle-line:click-014#0": {
+  "verdict": "not_equivalent",
+  "note": "indent=None now yields None instead of 0; indent=5 yields 1 instead of 5"
+ },
+ "search-oracle-line:click-017#0": {
+  "verdict": "equivalent",
+  "note": "negated inverse comparison; same truth table"
+ },
+ "search-oracle-line:click-018#0": {
+  "verdict": "equivalent",
+  "note": "negated inverse comparison; same truth table"
+ },
+ "search-oracle-line:click-019#0": {
+  "verdict": "equivalent",
+  "note": "negated inverse comparison; same truth table"
+ },
+ "search-oracle-line:click-021#0": {
+  "verdict": "equivalent",
+  "note": "negated inverse comparison; same truth table"
+ },
+ "search-oracle-line:click-024#0": {
+  "verdict": "equivalent",
+  "note": "negated inverse comparison; same truth table"
+ },
+ "search-oracle-line:click-027#0": {
+  "verdict": "equivalent",
+  "note": "negated inverse comparison; same truth table"
+ },
+ "search-oracle-line:click-030#0": {
+  "verdict": "equivalent",
+  "note": "negated inverse comparison; same truth table"
+ },
+ "search-oracle-line:click-031#0": {
+  "verdict": "not_equivalent",
+  "note": "assert len(args) != 2 accepts zero or three positional args"
+ },
+ "search-oracle-line:click-035#0": {
+  "verdict": "equivalent",
+  "note": "negated inverse comparison; same truth table"
+ },
+ "search-oracle-line:click-038#0": {
+  "verdict": "equivalent",
+  "note": "negated inverse comparison; same truth table"
+ },
+ "search-oracle-line:click-051#0": {
+  "verdict": "not_equivalent",
+  "note": "only exit code 1 is treated as failure; exit code 2 is not"
+ },
+ "search-oracle-line:click-052#0": {
+  "verdict": "equivalent",
+  "note": "negated inverse comparison; same truth table"
+ },
+ "search-oracle-line:click-053#0": {
+  "verdict": "equivalent",
+  "note": "negated inverse comparison; same truth table"
+ },
+ "search-oracle-line:click-056#0": {
+  "verdict": "equivalent",
+  "note": "negated inverse comparison; same truth table"
+ },
+ "search-oracle-line:click-057#0": {
+  "verdict": "equivalent",
+  "note": "negated inverse comparison; same truth table"
+ },
+ "search-oracle-line:rich-000#0": {
+  "verdict": "equivalent",
+  "note": "negated inverse comparison; same truth table"
+ },
+ "search-oracle-line:rich-001#1": {
+  "verdict": "not_equivalent",
+  "note": "'and not isinstance' became 'or isinstance': a class object without __rich__ enters the loop"
+ },
+ "search-oracle-line:rich-008#0": {
+  "verdict": "equivalent",
+  "note": "negated inverse comparison; same truth table"
+ },
+ "search-oracle-line:rich-013#0": {
+  "verdict": "equivalent",
+  "note": "negated inverse comparison; same truth table"
+ },
+ "search-oracle-line:rich-022#0": {
+  "verdict": "equivalent",
+  "note": "negated inverse comparison; same truth table"
+ },
+ "search-oracle-line:rich-024#0": {
+  "verdict": "equivalent",
+  "note": "negated inverse comparison; same truth table"
+ },
+ "search-oracle-line:rich-025#0": {
+  "verdict": "not_equivalent",
+  "note": "not (a and b) is not (a and not b): when _redirect_stdout is False the patched code still redirects"
+ },
+ "search-oracle-line:rich-029#0": {
+  "verdict": "equivalent",
+  "note": "negated inverse comparison; same truth table"
+ },
+ "search-oracle-line:rich-031#0": {
+  "verdict": "equivalent",
+  "note": "negated inverse comparison; same truth table"
+ },
+ "search-oracle-line:rich-032#0": {
+  "verdict": "not_equivalent",
+  "note": "not (x and c) differs from (x and not c) when the text has no newline"
+ },
+ "search-oracle-line:rich-033#0": {
+  "verdict": "equivalent",
+  "note": "negated inverse comparison; same truth table"
+ },
+ "search-oracle-line:rich-047#0": {
+  "verdict": "equivalent",
+  "note": "negated inverse comparison; same truth table"
+ },
+ "search-oracle-line:rich-048#0": {
+  "verdict": "equivalent",
+  "note": "negated inverse comparison; same truth table"
+ },
+ "search-sbfl:click-010#0": {
+  "verdict": "not_equivalent",
+  "note": "bug left in get_best_encoding; caller condition inverted so the buggy result is only used when an encoding was passed"
+ },
+ "search-sbfl:click-012#0": {
+  "verdict": "equivalent",
+  "note": "negated inverse comparison; same truth table"
+ },
+ "search-sbfl:click-013#29": {
+  "verdict": "not_equivalent",
+  "note": "compensating edit: default fd becomes 0 and the guard is inverted"
+ },
+ "search-sbfl:click-014#23": {
+  "verdict": "not_equivalent",
+  "note": "same patch as the oracle search: indent and 1"
+ },
+ "search-sbfl:click-017#0": {
+  "verdict": "equivalent",
+  "note": "negated inverse comparison; same truth table"
+ },
+ "search-sbfl:click-018#0": {
+  "verdict": "equivalent",
+  "note": "negated inverse comparison; same truth table"
+ },
+ "search-sbfl:click-019#1": {
+  "verdict": "equivalent",
+  "note": "negated inverse comparison; same truth table"
+ },
+ "search-sbfl:click-021#17": {
+  "verdict": "equivalent",
+  "note": "negated inverse comparison; same truth table"
+ },
+ "search-sbfl:click-023#5": {
+  "verdict": "not_equivalent",
+  "note": "compensating edit: non-forced streams now return False before checking the stream"
+ },
+ "search-sbfl:click-024#7": {
+  "verdict": "equivalent",
+  "note": "negated inverse comparison; same truth table"
+ },
+ "search-sbfl:click-030#0": {
+  "verdict": "equivalent",
+  "note": "negated inverse comparison; same truth table"
+ },
+ "search-sbfl:click-031#0": {
+  "verdict": "not_equivalent",
+  "note": "assert len(args) != 2 accepts zero or three positional args"
+ },
+ "search-sbfl:click-035#0": {
+  "verdict": "equivalent",
+  "note": "negated inverse comparison; same truth table"
+ },
+ "search-sbfl:click-038#0": {
+  "verdict": "equivalent",
+  "note": "negated inverse comparison; same truth table"
+ },
+ "search-sbfl:click-051#0": {
+  "verdict": "not_equivalent",
+  "note": "only exit code 1 is treated as failure; exit code 2 is not"
+ },
+ "search-sbfl:click-056#4": {
+  "verdict": "equivalent",
+  "note": "negated inverse comparison; same truth table"
+ },
+ "search-sbfl:rich-000#0": {
+  "verdict": "equivalent",
+  "note": "negated inverse comparison; same truth table"
+ },
+ "search-sbfl:rich-008#0": {
+  "verdict": "equivalent",
+  "note": "negated inverse comparison; same truth table"
+ },
+ "search-sbfl:rich-013#0": {
+  "verdict": "equivalent",
+  "note": "negated inverse comparison; same truth table"
+ },
+ "search-sbfl:rich-022#0": {
+  "verdict": "equivalent",
+  "note": "negated inverse comparison; same truth table"
+ },
+ "search-sbfl:rich-024#2": {
+  "verdict": "equivalent",
+  "note": "negated inverse comparison; same truth table"
+ },
+ "search-sbfl:rich-029#0": {
+  "verdict": "equivalent",
+  "note": "negated inverse comparison; same truth table"
+ },
+ "search-sbfl:rich-032#5": {
+  "verdict": "not_equivalent",
+  "note": "not (x and c) differs from (x and not c) when the text has no newline"
+ }
+}
