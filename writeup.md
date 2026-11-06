@@ -173,7 +173,7 @@ I read every accepted patch that passes the complete suite without being AST-ide
 | Gemma 4 E2B greedy | 14 | 5 | 9 |
 | Gemma 4 E2B, sampled retries | 3 | 2 | 1 |
 
-*Table 6. Manual review. Verdicts and one-line reasons are in `results/manual_review.json`.*
+*Table 6. Diff-by-diff review. Verdicts and one-line reasons are in `results/manual_review.json`.*
 
 **The search.** Its equivalent patches are mostly double negations such as `not (x is not None)`. The rest are genuinely different and simply untested:
 
@@ -204,7 +204,7 @@ Counting these hidden regressions, the wrong rate under `full` becomes 8.5% for 
 - **Coverage.** `cov` uses coverage of the clean code, not of the patched code. A patch that adds new calls could reach code no selected test covers.
 - **Timing.** Experiments shared the machine; trust the ratios between rules, not the seconds.
 - **Gemma was given the buggy function, and only E2B was tested.** This isolates the stopping question but is not an end-to-end agent; larger variants do not fit next to the tests in 8 GB.
-- **Review.** Claude proposed the verdicts and I checked them. The reasons are published so others can disagree.
+- **Review.** The verdicts were assigned by Claude, reading each diff; they were not independently re-checked by a second person. Every verdict and its one-line reason is published so others can audit and disagree.
 
 ## 6. Related work
 
@@ -229,7 +229,7 @@ Code, bugs, coverage maps and every candidate and model attempt with per-test ou
 
 ## AI assistance
 
-I built this project with Claude (Anthropic) as a coding agent. It proposed the research question within the brief I gave it, wrote most of the harness and analysis code, ran the experiments on my machine, proposed the manual-review verdicts in Section 3.4 and drafted this text. I set the goal and constraints, reviewed the code and the verdicts, and edited the writeup. Every number here comes from the released scripts and raw results.
+I built this project with Claude (Anthropic) as a coding agent. It proposed the research question within the brief I gave it, wrote most of the harness and analysis code, ran the experiments on my machine, assigned the review verdicts in Section 3.4 and drafted this text. I set the goal and constraints and decided what to submit; the review verdicts in Section 3.4 were not independently re-checked by a human. Every number here comes from the released scripts and raw results.
 
 ## References
 
